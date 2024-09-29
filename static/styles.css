@@ -46,4 +46,14 @@ legend {
     font-weight: bold;
     margin-bottom: 0.5em;
 }
-
+#dataTable tbody tr:first-child {
+    font-weight: bold;
+}
+#dataTable tbody tr{
+    font-weight: normal;
+}
+#dataTable tbody td::selection,
+#dataTable thead th::selection{
+    background-color: yellow; /* Цвет фона выделенного текста */
+    color: black; /* Цвет текста выделенного текста */
+}
