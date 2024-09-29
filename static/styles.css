@@ -1,0 +1,49 @@
+@import url("svg.css");
+table{
+    text-align: center;
+    width: 100%;
+    table-layout: fixed;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Стили для всех меток (label) в HTML */
+
+
+/* Стили для всех текстовых полей (input type="text") */
+input[type="text"] {
+    width: 100px;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Стили для текстового поля (input type="text") при фокусе */
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+form {
+    margin: 2px 0; /* Добавляет отступы сверху и снизу формы */
+    padding: 1px; /* Добавляет внутренние отступы вокруг содержимого формы */
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 1px;
+    margin: 1px 0;
+    background: #f9f9f9;
+}
+legend {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
