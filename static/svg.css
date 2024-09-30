@@ -1,6 +1,9 @@
 
 svg {
     border: 1px solid black;
+        max-width: 100%; /* Максимальная ширина 100% от родителя */
+        height: auto; /* Автоматическая высота для сохранения пропорций */
+
 }
 svg .point {
     fill: black;

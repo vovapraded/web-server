@@ -6,7 +6,7 @@ export function initForm() {
         const formData = new FormData(this);
         const queryString = new URLSearchParams(formData).toString();
 
-        fetch(`/calculate?${queryString}`)
+        fetch(`/fcgi-bin/app.jar?${queryString}`)
             .then(response => response.json())
             .then(data => {
                 // Отображаем результат

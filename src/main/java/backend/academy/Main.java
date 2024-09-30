@@ -18,11 +18,11 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class Main {
-    private static final String HTTP_RESPONSE = "Status: 200 OK\n" +
+    private static final String HTTP_RESPONSE = "HTTP/1.1: 200 OK\n" +
             "Content-Type: application/json\n" +
             "Content-Length: %d\n\n" +
             "%s";
-    private static final String HTTP_ERROR = "Status: 400 Bad Request\n" +
+    private static final String HTTP_ERROR = "HTTP/1.1: 400 Bad Request\n" +
             "Content-Type: application/json\n" +
             "Content-Length: %d\n\n" +
             "%s";
@@ -41,8 +41,7 @@ public class Main {
     static {
         try {
             // Добавляем FileHandler для записи логов в файл
-            FileHandler fileHandler = new FileHandler("/var/log/webserver.log", true); // Путь к лог-файлу
-            fileHandler.setFormatter(new SimpleFormatter());
+            FileHandler fileHandler = new FileHandler("/home/studs/s409397/logs/webserver.log", true); // Лог-файл в директории пользователя            fileHandler.setFormatter(new SimpleFormatter());
             logger.addHandler(fileHandler);
             logger.setLevel(Level.INFO); // Уровень логирования
         } catch (Exception e) {
